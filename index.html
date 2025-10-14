@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Co-Pilot Professional Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="greeting">
+            <h1>Intelligent Co-Pilot Dashboard</h1>
+            <p>Welcome Back! Your centralized journey intelligence is active.</p>
+        </div>
+
+        <div class="alert-banner">
+            Status: All upcoming flights and connections are confirmed. Safe travels!
+        </div>
+
+        <h3 class="section-title">My Next Adventure (Centralized Itinerary)</h3>
+
+        <div class="trip-card-container">
+            <div class="trip-card">
+                <h2>Upcoming Journey: Tanjavur</h2>
+                <div class="detail-row"><strong>Dates:</strong> <span>Nov 12 - Nov 19, 2025</span></div>
+                <div class="detail-row"><strong>Flight:</strong> <span>AF 102 (Departure 08:30)</span></div>
+                <div class="detail-row"><strong>Stay:</strong> <span>Near thanjai big temple</span></div>
+                <div class="detail-row"><strong>Status:</strong> <span>Documents Secured.</span></div>
+                <button onclick="viewItinerary()" class="ai-button trip-detail-btn">View Full Details →</button>
+            </div>
+
+            <div class="trip-card">
+                <h2>Co-Pilot Recommendations</h2>
+                <div class="detail-row"><strong>Location:</strong> <span>Near your hotel</span></div>
+                <div class="detail-row"><strong>Type:</strong> <span>Hidden Local Coffee Shop</span></div>
+                <div class="detail-row"><strong>Match:</strong> <span>92% (Based on past trips)</span></div>
+                <div class="detail-row"><strong>Note:</strong> <span>AI Model training is in progress.</span></div>
+                <button class="ai-button trip-detail-btn disabled" disabled>AI Feature Loading...</button>
+            </div>
+        </div>
+        
+        <div class="action-area">
+            <button class="ai-button" onclick="handleAICapture()">
+                Auto-Capture Trip from Email
+            </button>
+        </div>
+        
+        <div class="footer">
+            © 2025 Intelligent Co-Pilot | Basic MVP View
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
